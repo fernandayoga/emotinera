@@ -1,0 +1,173 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f2f2f2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Memastikan gambar di-scale dengan benar */
+  background-attachment: fixed;
+  height: 100%; /* Mengatur tinggi html dan body ke 100% */
+  margin: 0; /* Menghilangkan margin default */
+  overflow: hidden; /* Mencegah scroll pada halaman */
+}
+
+.container {
+  margin-top: 50px;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.row {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+}
+
+.login-form-1,
+.login-form-2 {
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: #d1d1d1;
+  height: 45px;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+.btnSubmit {
+  width: 90%;
+  padding: 10px;
+  background-color: #3e959c;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  height: 45px;
+  margin-top: 10px;
+}
+
+.btnSubmit:hover {
+  background-color: 	#008080	;
+}
+
+.ForgetPwd {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  margin: 0 auto;
+  color: #8a8a8a;
+  text-decoration: none;
+  width: 45%;
+
+}
+
+.ForgetPwd:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Card */
+.card {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  height: 400px;
+  background-color: #3e959c;
+  padding-top: 110px;
+}
+
+.card-body {
+  padding-top: 10px;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+  color: #f0f8ff;
+}
+
+.text-center-2 {
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 10px;
+  color: #f0f8ff;
+}
+
+.text-center-3 {
+  text-align: center;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: transparent;
+  height: 40px;
+  text-align: center;
+  border-radius: 30px;
+  width: 120px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: white; /* Ubah background menjadi putih saat di-hover */
+  color: #000; /* Ubah teks menjadi hitam saat di-hover untuk kontras yang lebih baik */
+}
+
+@media (max-width: 690px) {
+  .login-form-1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .card {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .row {
+    width: 90%;
+  }
+}
